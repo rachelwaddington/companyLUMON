@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+header .navbar {
+    display: inline-flex; 
+    background-color: rgba(248, 248, 248, 0.9);
+    padding: 20px 30px; 
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+header ul li {
+    padding: 0 20px;
+}
+
+header ul li a {
+    font-family: 'Source Code Pro';
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+header ul li a:hover {
+    color: #1f638a;
+    text-decoration: overline;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 720px) {
+    header ul{
+        display: none;
+    }
+    header {
+        position: fixed;
+        justify-content: flex-end;
+    }
+}
+
+
+/* ------------------------------------- main --- */
+
+main .mainbg {
+    background: url('./images/lumonbg1.avif');
+    box-shadow: inset 0 0 0 2000px rgba(33, 115, 150, 0.6);
+    margin-top: 0;
+    height: 500px;
+    align-content: center;
+}
+
+
+main h1 {
+    width:max-content;
+    border-radius: 0px 20px 20px 0;
+    background: rgba(8, 53, 79, 0.8);
+    color: #eee;
+    padding: 1rem 1rem;
+    line-height:1em;
+    font-family: Orbitron;
+    font-size: 9rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: 20px;
+}
+
+main h4 {
+    margin-top: 0px;
+    width:max-content;
+    border-radius: 0px 0px 20px 0;
+    background: rgba(8, 53, 79, 0.8);
+    color: #eee;
+    padding: 0 20px 20px;
+    font-weight: 400;
+    line-height:1em;
+    font-family: 'Source Code Pro';
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+@media only screen and (max-width: 720px) {
+    main h1{
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+
+    main h4 {
+        font-size:10px;
+        letter-spacing: 1px;
+    }
+}
+
+/* -------------------------------- departments --- */
+
+.dept {
+    background-color: #E8EBEC;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.containertitle {
+    text-align: center;
+    padding: 10px;
+}
+
+.containertitle h2{
+    font-family: 'Source Code Pro';
+    font-style: italic;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.depcontainer h2 {
+    font-family: Orbitron;
+    padding-left: 10px;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.depcontainer h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 20px 10px 0;
+    line-height: 1.4rem;
+
+}
+
+.depcontainer a {
+    color: #08354f;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width:max-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: rgba(43, 92, 121, 0.3);
+}
+
+.depcontainer a:hover {
+    width:max-content;
+    color: #144c6d;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #133d55;;
+}
+
+.depcontainer {
+    display: flex;
+    gap: 40px;
+    margin: 2px 80px;
+}
+
+.depbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(217, 220, 224);
+    border-radius: 10%;
+    padding: 30px 20px;
+}
+
+.depbox:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.depbox1 {
+    display: flex;
+}
+
+.depbox img {
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 10%;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+
+@media only screen and (max-width: 720px) {
+    .depcontainer {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* -------------------------------- benefits --- */
+
+.benefits {
+    background-color: #4181a6;
+}
+
+.benefitcontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px 20px 0;
+    gap: 40px;
+}
+
+.benefitcontainer h4 {
+    margin: 0;
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+}
+
+.benefitsbox img {
+    width: 230px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10%;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 720px) {
+    .benefitcontainer {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* -------------------------------- MDRteam --- */
+
+
+.mdrteam {
+    background-color: #E8EBEC;
+    margin: 20px;
+}
+
+.mdrcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.mdrcontainer img {
+    width: 300px;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 720px) {
+    .mdrcontainer {
+        flex-wrap: wrap;
+    }
+}
+
+/* -------------------------------- footer --- */
+
+footer {
+    background-color:#08354f ;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footercontainer h2 {
+    font-family: Orbitron;
+    text-transform: uppercase;
+    color:#E8EBEC;
+    font-size: 2rem;
+    margin-bottom: 0;
+    letter-spacing: 10px;
+}
+
+.footercontainer h3 {
+    font-family: 'Source Code Pro';
+    text-transform: uppercase;
+    color: #E8EBEC;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+
+.footercontainer img {
+    margin-top: 20px;
+    width: 70px;
+    background-color:rgba(232, 235, 236, 0.6);
+    border-radius: 50%;
+    padding: 10px;
+}
